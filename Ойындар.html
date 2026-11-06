@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ойындар әлемі</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101426;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c35e8, #00bcd4);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #202742;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #202742;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 5px 15px #0005;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            color: #00e5ff;
+        }
+
+        .card p {
+            padding: 0 15px;
+            line-height: 1.6;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #713bea;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 15px;
+            border-radius: 8px;
+        }
+
+        .card a:hover {
+            background: #00a9c7;
+        }
+
+        footer {
+            background: #202742;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎮 Ойындар әлемі</h1>
+        <p>Қызықты ойындармен бірге жаңа әлемді аш!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Басты бет</a>
+        <a href="#games">Ойындар</a>
+        <a href="#about">Біз туралы</a>
+    </nav>
+
+    <section class="intro" id="home">
+        <h2>Ең танымал ойындар</h2>
+        <p>Өзіңе ұнайтын ойынды таңдап, ойын әлеміне саяхат жаса!</p>
+    </section>
+
+    <section class="games" id="games">
+
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=0a59113a5977c58ee683188294e3d4d74d72a67c-8767819-images-thumbs&n=13"
+                 alt="Компьютерлік ойын">
+            <h2>Minecraft</h2>
+            <p>Блоктардан өз әлеміңді құрып, зерттеу және шытырман оқиғаларға қатысуға болады.</p>
+            <a href="https://www.minecraft.net/" target="_blank">Ойын туралы</a>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/c1/d7/3a/c1d73a9c31a77decf206247980f62b98.jpg?nii=t"
+                 alt="Экшн ойын">
+            <h2>Fortnite</h2>
+            <p>Басқа ойыншылармен жарысып, стратегия мен жылдамдықты сынайтын ойын.</p>
+            <a href="https://www.fortnite.com/" target="_blank">Ойын туралы</a>
+        </div>
+
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=6849a18ccf5d94b2691cba8f8541f89b9840cb9e-4824189-images-thumbs&n=13"
+                 alt="Ойын контроллері">
+            <h2>Roblox</h2>
+            <p>Әртүрлі виртуалды әлемдерге кіріп, өз ойындарыңды жасауға мүмкіндік беретін платформа.</p>
+            <a href="https://www.roblox.com/" target="_blank">Ойын туралы</a>
+        </div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600"
+         alt="PUBG ойыны">
+    <h2>PUBG</h2>
+    <p>Бұл ойында ойыншылар тірі қалу үшін күресіп, жеңіске жетуге тырысады.</p>
+    <a href="https://www.pubg.com/" target="_blank">Ойын туралы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600"
+         alt="Ойын әлемі">
+    <h2>GTA V</h2>
+    <p>Үлкен ашық әлемде көлік жүргізіп, түрлі тапсырмаларды орындауға болады.</p>
+    <a href="https://www.rockstargames.com/gta-v" target="_blank">Ойын туралы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600"
+         alt="Counter-Strike ойыны">
+    <h2>Counter-Strike 2</h2>
+    <p>Командаларға бөлініп, тактика мен мергендікті сынайтын командалық ойын.</p>
+    <a href="https://www.counter-strike.net/cs2" target="_blank">Ойын туралы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600"
+         alt="Shadow Fight 2">
+    <h2>Shadow Fight 2</h2>
+    <p>Көлеңкелі жауынгермен шайқасып, қарсыластарды жеңіп, жаңа қаруларды аш!</p>
+    <a href="https://www.shadowfight2.com/" target="_blank">Ойын туралы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600"
+         alt="Укради яйцо">
+    <h2>Укради яйцо</h2>
+    <p>Жұмыртқаны жинап, қорғап, қарсыластарыңнан бұрын мақсатқа жетуге тырыс!</p>
+    <a href="https://www.roblox.com/" target="_blank">Ойын платформасы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600"
+         alt="Долина сладостей">
+    <h2>Долина сладостей</h2>
+    <p>Тәттілер әлеміне саяхат жасап, түрлі қызықты тапсырмалар мен деңгейлерді орында!</p>
+    <a href="https://www.roblox.com/" target="_blank">Ойын платформасы</a>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600"
+         alt="Тап тап стрелка">
+    <h2>Тап тап стрелка</h2>
+    <p>Жылдамдық пен дәлдікті сынап, нысанаға дұрыс бағыттап, тапсырмаларды орында!</p>
+    <a href="https://www.crazygames.com/" target="_blank">Ойындар сайты</a>
+</div>
+
+    </section>
+
+    <section class="intro" id="about">
+<h2>🎮 Біз туралы</h2>
+
+    <p>
+        «Ойындар әлемі» сайтына қош келдіңіз!
+        Біздің сайт компьютерлік және мобильді ойындарға
+        қызығатын адамдарға арналған. Мұнда әртүрлі ойындармен
+        танысып, олардың ерекшеліктері мен қызықты мүмкіндіктері
+        туралы ақпарат алуға болады.
+    </p>
+
+    <p>
+        Біздің басты мақсатымыз — ойын әуесқойларына
+        танымал ойындарды таныстыру, олардың ресми сайттарына
+        өтуге мүмкіндік беру және бос уақытты қызықты өткізуге
+        көмектесу. Сайтта Shadow Fight 2, Minecraft, Roblox,
+        PUBG және басқа да ойындар ұсынылған.
+    </p>
+
+    <h3>🕹️ Ойындардың түрлері</h3>
+
+    <p>
+        Сайтта әртүрлі жанрдағы ойындар бар:
+    </p>
+
+    <ul style="text-align: left; display: inline-block; line-height: 2;">
+        <li>Экшн ойындар — жылдамдық пен ептілікті қажет етеді.</li>
+        <li>Стратегиялық ойындар — ойлау мен жоспарлауды дамытады.</li>
+        <li>Шытырман оқиғалы ойындар — қызықты оқиғаларға толы.</li>
+        <li>Симуляторлар — әртүрлі әрекеттерді орындауға мүмкіндік береді.</li>
+        <li>Мобильді ойындар — телефон арқылы ойнауға ыңғайлы.</li>
+    </ul>
+
+    <h3>⭐ Біздің артықшылықтарымыз</h3>
+
+    <p>
+        Біздің сайтымыз қарапайым әрі қолдануға ыңғайлы етіп
+        жасалған. Ойындар арнайы карточкаларға орналастырылған.
+        Әр карточкада ойынның атауы, суреті, қысқаша сипаттамасы
+        және қосымша ақпарат алуға арналған сілтеме бар.
+        Сайт компьютерде де, мобильді құрылғыларда да ашылатындай
+        етіп безендірілген.
+    </p>
+
+    <h3>🧠 Ойындардың пайдасы</h3>
+
+    <p>
+        Кейбір ойындар логикалық ойлауды, зейінді,
+        есте сақтауды, жылдам шешім қабылдауды және
+        шығармашылық қабілетті дамытуға көмектеседі.
+        Сонымен қатар ойындар достармен бірге уақыт өткізуге
+        және жаңа нәрселерді үйренуге мүмкіндік береді.
+        Дегенмен, ойын ойнау уақытын бақылап, демалыс пен
+        оқуға да жеткілікті уақыт бөлу маңызды.
+    </p>
+
+    <h3>🎯 Біздің мақсатымыз</h3>
+
+    <p>
+        Біз ойын әлеміндегі қызықты жаңалықтармен танысуға,
+        әртүрлі ойын жанрларын зерттеуге және пайдаланушыларға
+        пайдалы ақпарат ұсынуға ұмтыламыз.
+        Сізге біздің сайтымыз ұнайды және жаңа ойындарды
+        табуға көмектеседі деп сенеміз!
+    </p>
+
+    <p>
+        <strong>Ойындар әлеміне қош келдіңіз!
+        Қызықты ойындар мен жарқын әсерлер сізді күтеді!</strong>
+    </p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Ойындар әлемі | Барлық құқықтар қорғалған</p>
+        <p>🎮 Ойын — көңіл көтеру мен шығармашылық әлемі!</p>
+    </footer>
+
+</body>
